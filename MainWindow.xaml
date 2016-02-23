@@ -1,0 +1,20 @@
+﻿<Window x:Class="tx_wpf_printpreview.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="TX Text Control .NET for WPF Print Preview Sample" Height="600" Width="800" xmlns:my="clr-namespace:TXTextControl.WPF;assembly=TXTextControl.WPF" Loaded="Window_Loaded">
+    <DockPanel>
+
+        <Menu Height="23" Name="menu1" DockPanel.Dock="Top">
+            <MenuItem Header="_File">
+                <MenuItem Header="_Print Preview..." Click="MenuItem_Click" />
+            </MenuItem>
+        </Menu>
+            
+        <my:ButtonBar Name="buttonBar1" />
+        <my:RulerBar Name="rulerBar1" />
+        <my:StatusBar Name="statusBar1" />
+        <my:RulerBar Name="rulerBar2" VerticalAlignment="Stretch" HorizontalAlignment="Left" />
+        <my:TextControl Name="textControl1" ButtonBar="buttonBar1" RulerBar="rulerBar1" VerticalRulerBar="rulerBar2" StatusBar="statusBar1" Loaded="textControl1_Loaded" />
+        
+    </DockPanel>
+</Window>
