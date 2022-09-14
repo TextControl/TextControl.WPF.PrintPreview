@@ -43,7 +43,7 @@ namespace tx_wpf_printpreview
 
         private void textControl1_Loaded(object sender, RoutedEventArgs e)
         {
-            textControl1.Load("Demo.rtf", TXTextControl.StreamType.RichTextFormat);
+            textControl1.Load("Demo_wpf.rtf", TXTextControl.StreamType.RichTextFormat);
         }
     }
 }
